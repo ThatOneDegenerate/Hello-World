@@ -1,7 +1,7 @@
 /*
- * CS1111 textbooks.c
- * Author: Thad Kustarz
- * Email: twkustar@mtu.edu
+ * CS1111 Lab 2
+ * Author: Ian Ranstadler
+ * Email: imransta@mtu.edu
  * 9/13/24
  */
 
@@ -11,21 +11,19 @@
 
 int main()
 {
-	// reads the number enetered and stores it as tbs variable
-	int tbs;
-	printf("How many textbooks did you buy this semester? \n");
-	scanf("%d", &tbs);
-
-	  //see if number enetered was less than zero 
-        //then checks the amount that was enetered then displays a comment based off of number enetered
 	
-	if ( tbs < 0 )
+	int tbs;
+	printf("How many textbooks did you buy this semester? \n");//This line asks the user how many textbooks they've bought this semester
+	scanf("%d", &tbs);//And saves it as a variable tbs
+
+	
+	if ( tbs < 0 )//Here we check if they've entered a number that is less than 0
 	{
-		printf("That's not an option!\n");
+		printf("That's not an option!\n");//And tell them they can't do that
 	}
 	else
 	{
-	switch ( tbs )
+	switch ( tbs )//If over zero, this command will read the variable and display the corresponding message
 	{
 		case 0:
 			printf("You got away cheap!\n");
