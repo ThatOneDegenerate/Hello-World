@@ -1,7 +1,7 @@
 /*
  * CS1111 Compare.c
- * Author: Austin Johnson
- * Email: austinjo@mtu.edu
+ * Author: Thad Kustarz
+ * Email: twkustar@mtu.edu
  * 9/13/24
  */
 
