@@ -6,19 +6,19 @@
  */
 
 #include <stdio.h>
-
+//sets up the progam  
 
 int main()
 
 {
-	//variables
+	// Asks for two numbers to be entered then it reads the two numbers that were entered.
 	float num1, num2;
 
-	//prompt and scan for 2 numbers
+	
 	printf("Enter two numbers: \n");
 	scanf("%f%f", &num1, &num2);
 
-	//see if the numbers are equal
+	// Checks to see if the numbers are equal or not equal then displays yes or no based off the statement
 	if ( num1 == num2 )
 	{ 
 		printf("Are the numbers equal? Yes \nAre the numbers not equal? No\n");
@@ -30,7 +30,8 @@ int main()
 	}
 
 
-	//check for inequalities with the numbers
+	//checks to see what number is bigger or smaller then it displays yes or no to answer the questions
+
 	  if ( num1 > num2 && num1 != num2)
         {
                 printf("Is the first number less than the second? No\nIs the first number greater than the second? Yes\nIs the first number less than or equal to the second? No\nIs the first number greater than or equal to the second? Yes\n");
