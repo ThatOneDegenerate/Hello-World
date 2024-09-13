@@ -1,34 +1,34 @@
 /*
- * CS1111 Compare.c
- * Author: Ian Ranstadler
- * Email: imransta@mtu.edu
+ * CS1111 pressure.c
+ * Author: Thad Kustarz
+ * Email: twkustar@mtu.edu
  * 9/13/24
  */
-
+// Sets up program
 #include <stdio.h>
 
 int main()
 {
 
-	//prompt and scan for depth
+	//reads the number that was entered and uses it for the depth of the lake in meters
 	float depth;
 	printf("How deep is the lake (in meters)? ");//This line asks for the depth
 	scanf("%f", &depth);//This line asks for the depth
 
-	//check to see how skilled the diver has to be for certain depths
-	if ( depth < 12 )//This if statement checks if the number entered is less than 12 meters
+	//uses an if statement to run the numbered entered then displays a message based off the number
+	if ( depth < 12 )
 	{
-		printf("You can probably dive in it if you are a beginner.\n");//and prints the corresponding message
+		printf("You can probably dive in it if you are a beginner.\n");
 	}
-	else if ( depth > 12 && depth < 30 )//If it is deeper than 12 then it will chack if it is less than 30 meters
+	else if ( depth > 12 && depth < 30 )
 	{
-		printf("You can probably dive in it if you are a trained professional.\n");//And print the corresponding message
+		printf("You can probably dive in it if you are a trained professional.\n");
 	}
-	else //And if it's deeper than 30 meters
+	else 
 	{
-		printf("You might want to make preparations before diving.\n");//It will print this message.
+		printf("You might want to make preparations before diving.\n");
 	}
-	
-	printf("The presure at the deepest point is: %.2f kPa.\n", depth*9.81);//And then using the input, it will compute the presure and read it back to the user
+	// Calculates the pressure at the deepes poin then displays it in a message
+	printf("The presure at the deepest point is: %.2f kPa.\n", depth*9.81);
 
 }
