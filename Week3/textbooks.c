@@ -1,22 +1,24 @@
 /*
  * CS1111 textbooks.c
- * Author: Austin Johnson
- * Email: austinjo@mtu.edu
+ * Author: Thad Kustarz
+ * Email: twkustar@mtu.edu
  * 9/13/24
  */
 
-//set up code
+//set up program
+
 #include <stdio.h>
 
 int main()
 {
-	//prompt for textbooks and scan for tbs
+	// reads the number enetered and stores it as tbs variable
 	int tbs;
 	printf("How many textbooks did you buy this semester? \n");
 	scanf("%d", &tbs);
 
-	//see if textbooks entered is less than 0
-	//then checks how expensive the users textbook purchases where objectively 
+	  //see if number enetered was less than zero 
+        //then checks the amount that was enetered then displays a comment based off of number enetered
+	
 	if ( tbs < 0 )
 	{
 		printf("That's not an option!\n");
