@@ -27,7 +27,7 @@
                 a = b;
                 b = num;
                 printf("%d ", num);
-                n=n-1;Thad Kustarz
+                n=n-1;
         }
 
 //printing new line
