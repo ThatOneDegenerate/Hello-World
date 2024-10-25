@@ -1,7 +1,7 @@
 /* CS1111 Week 9 Lab bubblesort.c
  *
  * @authors Claire Schultz, Ian Ranstdadler,Austin Johnson, Thad Kustarz
- * @email claschul@mtu.edu
+ * @email twkustar@mtu.edu, austinjo@mtu.edu, claschul@mtu.edu, imransta@mtu.edu
  * @date 10/25/2024
 */
         #include <stdio.h>
