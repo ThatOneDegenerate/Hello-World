@@ -7,11 +7,11 @@
  */
 
 #include<stdio.h>
-void swap(int *a, int *b);
+void swap(int *a, int *b); //calls the swap function
 
 int main(){
-    int a;
-    int b;
+    int a; //sets int a
+    int b; //sets int b
 
     a = 1; b = 2;
 
@@ -21,7 +21,7 @@ int main(){
     printf("a = %d, b = %d\n", a, b);
 }
 
-void swap(int *a, int *b){
+void swap(int *a, int *b){ //executes swap function
         int tmp;
 
         tmp = *a;
