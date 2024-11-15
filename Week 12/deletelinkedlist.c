@@ -1,5 +1,5 @@
 /*
- * CS1111 pointer.c
+ * CS1111 deletelinkedlist.c
  * Author: Thad Kustarz, Ian Ranstadler, Claire schultz, Austin Johnson
  * Email:twkustar@mtu.edu, austinjo@mtu.edu, claschul@mtu.edu, imransta@mtu.edu
  * 11/15/2024
@@ -10,8 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
+
 //Declare the Node
 typedef struct Node {
         int data;
