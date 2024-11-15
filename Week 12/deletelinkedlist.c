@@ -1,38 +1,49 @@
 /*
- * Implementation of getLinkedList
- *
- * @author Claire Schultz
- * @email claschul@mtu.edu
- *
- * @date 11/15/2024
+ * CS1111 pointer.c
+ * Author: Thad Kustarz, Ian Ranstadler, Claire schultz, Austin Johnson
+ * Email:twkustar@mtu.edu, austinjo@mtu.edu, claschul@mtu.edu, imransta@mtu.edu
+ * 11/15/2024
  */
 
+//Set up the code
 #include "linkedlist.h"
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
- * Gets a value from a linked list.
- *
- * @param head: The first node of the list.
- * @param index: The index to get the value of.
- * @param out: location to store the value from the list.
- *
- * @return: 0 on success, -1 on failure (out of bounds).
- */
-int getLinkedList(Node *head, int index, int *out)
+int main()
 {
-        Node *current = head;
-        int count = 0;
+//Declare the Node
+typedef struct Node {
+        int data;
+        struct Node* next;
+};
 
-    while (current != NULL) {
-        if (count == index) {
-           *out = current->value;
-           return 0;
+int deleteLinkedList(Node **head, int index) {
+        if (*head == NULL || index < 0) {
+                return -1; // Failure: list is empty or index is out of bounds
         }
-        current = current->next;
-        count++;
-    }
 
-    return -1;
+        Node *temp = *head;
+        if (index == 0) {
+                *head = temp->next; // Change head
+                free(temp); // Free old head
+        return 0; // Success
+        }
+
+        // Find the previous node of the node to be deleted
+        for (int i = 0; temp != NULL && i < index - 1; i++) {
+                temp = temp->next;
+        }
+
+        // If the index is out of bounds
+        if (temp == NULL || temp->next == NULL) {
+                return -1; // Failure
+        }
+
+        // Node temp->next is the node to be deleted
+        Node *next = temp->next->next;
+        free(temp->next); // Free the node
+        temp->next = next; // Unlink the deleted node from the list
+
+        return 0; // Success
 }
