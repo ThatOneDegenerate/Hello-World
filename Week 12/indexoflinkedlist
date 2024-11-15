@@ -9,7 +9,6 @@
 
 #include "linkedlist.h"
 #include <stddef.h>
-int main(){
 
 /*
 * Gets the index of a value.
@@ -36,5 +35,4 @@ count++;
 }
 
 return -1;
-}
 }
